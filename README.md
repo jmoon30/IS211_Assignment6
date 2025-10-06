@@ -4,19 +4,19 @@
 This project implements unit tests and conversion functions for temperatures (°C/°F/K), then refactors to a single generic converter that also supports distances (meters/yards/miles). It follows the Week 6 instructions for creating tests first, implementing functions, and finally refactoring with error handling.
 
 ## Repository Contents
-- **conversions.py** — Six temperature conversion functions:
+- **conversions.py** - Six temperature conversion functions:
   - `convertCelsiusToKelvin`, `convertCelsiusToFahrenheit`
   - `convertFahrenheitToCelsius`, `convertFahrenheitToKelvin`
   - `convertKelvinToCelsius`, `convertKelvinToFahrenheit`
-- **tests.py** — Unit tests for the six functions (5 cases per function, verbose output).
-- **conversions_refactored.py** — Single generic function:
+- **tests.py** - Unit tests for the six functions (5 cases per function, verbose output).
+- **conversions_refactored.py** - Single generic function:
   - `convert(fromUnit: str, toUnit: str, value: float) -> float`
   - Supports **temperature** (C/F/K) and **distance** (meters/yards/miles).
   - Case-insensitive unit names; identity conversions (same unit) return the input value.
   - Raises `ConversionNotPossible` for incompatible or unknown units.
-- **tests_refactored.py** — Unit tests for the generic converter:
+- **tests_refactored.py** - Unit tests for the generic converter:
   - Temperature conversions, distance conversions, identity conversions, and exception cases.
-- **run_tests.py** — Cross‑platform runner to execute both test suites (uses `pathlib` relative paths).
+- **run_tests.py** - Cross‑platform runner to execute both test suites (uses `pathlib` relative paths).
 
 ## How to Run Tests
 Requirements: Python 3.8+ (no third‑party packages).
@@ -70,4 +70,4 @@ Units are matched case‑insensitively and normalized (e.g., `" C "` works).
 
 ---
 
-© 2025 — IS211 Assignment 6
+© 2025 - IS211 Assignment 6
